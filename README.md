@@ -3,7 +3,7 @@ ML-MBIRL is an algorithm for offline inverse reinforcement learning that is disc
 
 ## Installation
 - PyTorch 1.13.1
-- [MuJoCo210](https://www.roboti.us/license.html)
+- MuJoCo 2.1.0
 - pip install -r requirements.txt
 
 
