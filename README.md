@@ -1,8 +1,6 @@
 # Understanding Expertise through Demonstrations:A Maximum Likelihood Framework for Offline Inverse Reinforcement Learning
 ML-MBIRL is an algorithm for offline inverse reinforcement learning that is discussed in the article [arxiv link](http://arxiv.org/abs/2302.07457)
 
-## Figures
-
 ## Installation
 - PyTorch 1.13.1
 - [MuJoCo210](https://www.roboti.us/license.html)
@@ -22,13 +20,13 @@ ML-MBIRL is an algorithm for offline inverse reinforcement learning that is disc
 All the commands below are also provided in `run.sh`.
 
 ### Sec 1 Offline-IRL benchmark (MuJoCo)
-Before experiment, you can download our expert demonstrations here and our trained world model [to do](http://arxiv.org/abs/2302.07457).
+Before experiment, you can download our expert demonstrations and our trained world model [here](http://arxiv.org/abs/2302.07457).
 
 ```bash
 python train.py --yaml_file args_yml/model_base_IRL/halfcheetah_v2_medium.yml --seed 0 --uuid halfcheetah_result 
 ```
 
-### Sec 2 Transfer task
+### Sec 2 Transfer task (to do)
 First, you can generate expert data by training expert policy:
 Make sure that the `env_name` parameter in `configs/samples/experts/ant_transfer.yml` is set to `CustomAnt-v0`
 ```bash
