@@ -1,0 +1,31 @@
+# halfcheetah experiments debug
+# medium-v0 N, lam, h: 12 5.92 6
+args:
+    env_name: halfcheetah-medium-v2 # d4rl mixed, supposedly the best for MOPO
+    reward_head: True
+    logvar_head: True
+    states: 'uniform'
+    steps_k: 6
+    reward_steps: 200
+    num_rollouts_per_step: 50
+    policy_update_steps: 1000
+    train_policy_every: 100
+    train_val_ratio: 0.2
+    real_sample_ratio: 0.05
+    model_train_freq: 1000
+    max_timesteps: 10000000
+    n_eval_rollouts: 10
+    num_models: 7
+    num_elites: 5
+    d4rl: True
+    model_retain_epochs: 5
+    mopo: True
+    #mopo_lam: 5.92
+    mopo_lam: 5.92
+    offline_epochs: 1000
+    mopo_penalty_type: ensemble_var
+    #load_model_dir: /home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/data/model_halfcheetah/halfcheetah_medium_v2_seed0/checkpoints/model_saved_weights/Model_halfcheetah-medium-v2_seed0_2022_11_20_01-53-21
+    save_model: True
+    save_policy: True
+    train_memory: 2000000
+    val_memory: 500000

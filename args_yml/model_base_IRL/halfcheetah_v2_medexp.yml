@@ -1,0 +1,30 @@
+# halfcheetah experiments debug
+args:
+    env_name: halfcheetah-medium-expert-v2
+    reward_head: True
+    logvar_head: True
+    states: 'uniform'
+    steps_k: 5
+    reward_steps: 200
+    num_rollouts_per_step: 50
+    policy_update_steps: 1000
+    train_policy_every: 100
+    train_val_ratio: 0.05
+    real_sample_ratio: 0.05
+    model_train_freq: 1000
+    max_timesteps: 10000000
+    n_eval_rollouts: 10
+    num_models: 7
+    num_elites: 5
+    d4rl: True
+    model_retain_epochs: 5
+    mopo: True
+    mopo_lam: 4.56
+    # tune_mopo_lam: True
+    offline_epochs: 1000
+    save_model: True
+    save_policy: True
+
+    load_model_dir: /home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/data/model_halfcheetah/halfcheetah_medexp_v2_seed0/checkpoints/model_saved_weights/Model_halfcheetah-medium-expert-v2_seed0_2022_11_20_00-14-44/
+    train_memory: 2000000
+    val_memory: 500000
