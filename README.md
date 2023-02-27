@@ -1,5 +1,5 @@
 # Understanding Expertise through Demonstrations:A Maximum Likelihood Framework for Offline Inverse Reinforcement Learning
-ML-MBIRL is an algorithm for offline inverse reinforcement learning that is discussed in the article [arxiv link](http://arxiv.org/abs/2302.07457)
+Offline ML-IRL is an algorithm for offline inverse reinforcement learning that is discussed in the article [arxiv link](http://arxiv.org/abs/2302.07457)
 
 ## Installation
 - PyTorch 1.13.1
