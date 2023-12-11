@@ -20,7 +20,7 @@ Offline ML-IRL is an algorithm for offline inverse reinforcement learning that i
 All the commands below are also provided in `run.sh`.
 
 ### Sec 1 Offline-IRL benchmark (MuJoCo)
-Before experiment, you can download our expert demonstrations and our trained world model [here]([http://arxiv.org/abs/2302.07457](https://drive.google.com/drive/folders/1J3oCcPhSyBrGmPBa7ggnb3AeFV8swN2o?usp=drive_link)).
+Before experiment, you can download our expert demonstrations and our trained world model [here](https://drive.google.com/drive/folders/1J3oCcPhSyBrGmPBa7ggnb3AeFV8swN2o?usp=drive_link).
 
 ```bash
 python train.py --yaml_file args_yml/model_base_IRL/halfcheetah_v2_medium.yml --seed 0 --uuid halfcheetah_result 
