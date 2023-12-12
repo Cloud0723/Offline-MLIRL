@@ -19,29 +19,13 @@ Offline ML-IRL is an algorithm for offline inverse reinforcement learning that i
 ## Experiments
 All the commands below are also provided in `run.sh`.
 
-### Sec 1 Offline-IRL benchmark (MuJoCo)
+### Offline-IRL benchmark (MuJoCo)
 Before experiment, you can download our expert demonstrations and our trained world model [here](https://drive.google.com/drive/folders/1BbEZLEKP6HAijeRBXG0V3JLSrB0FIQg6?usp=drive_link).
 
 ```bash
 python train.py --yaml_file args_yml/model_base_IRL/halfcheetah_v2_medium.yml --seed 0 --uuid halfcheetah_result 
 ```
 
-### Sec 2 Transfer task (to do)
-First, you can generate expert data by training expert policy:
-Make sure that the `env_name` parameter in `configs/samples/experts/ant_transfer.yml` is set to `CustomAnt-v0`
-```bash
-python common/train_gd.py configs/samples/experts/ant_transfer.yml
-python common/collect.py configs/samples/experts/ant_transfer.yml
-```
-
-After the training is done, you can choose one of the saved reward model to train a policy from scratch (Recovering the Stationary Reward Function).
-
-Transferring the reward to disabled Ant
-
-```bash 
-python common/train_optimal.py configs/samples/experts/ant_transfer.yml
-python ml/irl_samples.py configs/samples/agents/data_transfer.yml(data transfer)
-```
 
 ## Performances
 ![Graph](imgs/fig_1.png)
