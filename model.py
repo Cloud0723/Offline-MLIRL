@@ -757,7 +757,9 @@ class Ensemble(object):
                    0].lower() in model_dir.lower(), "Model loaded was not trained on this environment"
 
         print("Loading model from checkpoint...")
-
+        import os
+        model_dir = os.path.join(os.path.dirname(__file__), model_dir)
+        print(model_dir)
         torch_state_dict = torch.load(model_dir + '/torch_model_weights.pt', map_location=device)
         for i in range(self.num_models):
             self.models[i].load_state_dict(torch_state_dict['model_{}_state_dict'.format(i)])

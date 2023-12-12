@@ -24,7 +24,7 @@ args:
     offline_epochs: 1000
     augment_offline_data: False
     mopo_penalty_type: ensemble_var
-    load_model_dir: /home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/data/model_halfcheetah/halfcheetah_mixed_v2_seed0/checkpoints/model_saved_weights/Model_halfcheetah-medium-replay-v2_seed0_2022_11_20_01-52-59
+    load_model_dir: world_model/model_halfcheetah/halfcheetah_mixed_v2_seed0/checkpoints/model_saved_weights/Model_halfcheetah-medium-replay-v2_seed0_2022_11_20_01-52-59/
     save_policy: True
     save_model: True
     train_memory: 2000000

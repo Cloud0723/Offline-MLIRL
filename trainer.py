@@ -100,9 +100,7 @@ class Trainer(object):
         self.transfer=params['transfer']
         self.reward_opti= torch.optim.Adam(self.reward_function.parameters(), lr=1e-4,weight_decay=1e-3, betas=(0.9, 0.999))
         if self.transfer:
-            #self.reward_function.load_state_dict(torch.load('/home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/medexp_halfcheetah_reward_780.pt'))
-            #self.reward_function.load_state_dict(torch.load('/home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/reward_hopper/medexp_hopper_reward_2602_.pt'))
-            self.reward_function.load_state_dict(torch.load('/home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/reward_walker/medexp_walker_reward_5603_.pt'))
+            self.reward_function.load_state_dict(torch.load('./reward_walker/medexp_walker_reward_5603_.pt'))
             
             self.reward_function.eval()
         self._init_collect = params['init_collect']
@@ -707,8 +705,6 @@ class Trainer(object):
             self._train_agent(IRL=True)
             if i % 20 == 0 and not self.transfer:
                 self._train_reward()
-                #name='/home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/reward_hopper/medexp_hopper_reward_'+str(i)+str(self._seed)+'_'+'.pt'
-                #torch.save(self.reward_function.state_dict(), name)
             
             reward_model = self.test_agent(use_model=True, n_evals=10)
             reward_actual_stats = self.test_agent(use_model=False)

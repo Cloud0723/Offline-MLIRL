@@ -25,6 +25,6 @@ args:
     save_model: True
     save_policy: True
 
-    load_model_dir: ./data/model_halfcheetah/halfcheetah_medexp_v2_seed0/checkpoints/model_saved_weights/Model_halfcheetah-medium-expert-v2_seed0_2022_11_20_00-14-44/
+    load_model_dir: world_model/model_halfcheetah/halfcheetah_medexp_v2_seed0/checkpoints/model_saved_weights/Model_halfcheetah-medium-expert-v2_seed0_2022_11_20_00-14-44
     train_memory: 2000000
     val_memory: 500000

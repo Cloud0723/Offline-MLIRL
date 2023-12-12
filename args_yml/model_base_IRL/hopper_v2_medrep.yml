@@ -24,6 +24,6 @@ args:
     offline_epochs: 1000
     save_model: True
     save_policy: True
-    load_model_dir: /home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/data/hopper-model/hopper-v2-medreplay/checkpoints/model_saved_weights/Model_hopper-medium-replay-v2_seed0_2023_01_04_05-02-49
+    load_model_dir: /world_model/model_hopper/hopper-v2-medreplay/checkpoints/model_saved_weights/Model_hopper-medium-replay-v2_seed0_2023_01_05_03-33-00/
     train_memory: 2000000
     val_memory: 500000

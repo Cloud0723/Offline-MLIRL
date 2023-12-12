@@ -28,7 +28,7 @@ args:
     offline_epochs: 2000
     save_model: True
     save_policy: True
-    load_model_dir: /home/luoqijun/code/IRL_Code/MBIRL/rethinking-code-supp/data/model_walker2d/walker2d-medreplay/checkpoints/model_saved_weights/Model_walker2d-medium-replay-v2_seed0_2022_11_28_14-28-24
+    load_model_dir: world_model/model_walker2d/walker2d-medreplay/checkpoints/model_saved_weights/Model_walker2d-medium-replay-v2_seed0_2022_11_28_14-28-24
     train_memory: 1000000
     val_memory: 500000
     transfer: True
