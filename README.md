@@ -25,7 +25,10 @@ Before experiment, you can download our expert demonstrations and our trained wo
 ```bash
 python train.py --yaml_file args_yml/model_base_IRL/halfcheetah_v2_medium.yml --seed 0 --uuid halfcheetah_result 
 ```
-
+also you can use:
+```bash
+./run.sh
+```
 
 ## Performances
 ![Graph](imgs/fig_1.png)
