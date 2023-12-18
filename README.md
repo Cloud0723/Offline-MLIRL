@@ -1,6 +1,7 @@
 # When Demonstrations meet Generative World Models: A Maximum Likelihood Framework for Offline Inverse Reinforcement Learning
 Offline ML-IRL is an algorithm for offline inverse reinforcement learning that is discussed in the article [arxiv link](http://arxiv.org/abs/2302.07457)
 
+Here is the [link](https://github.com/Cloud0723/ML-IRL) to our online version.
 ## Installation
 - PyTorch 1.13.1
 - MuJoCo 2.1.0
